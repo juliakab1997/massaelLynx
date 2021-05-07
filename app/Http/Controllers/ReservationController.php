@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Photography;
+use App\Models\Reserve;
 use Illuminate\Http\Request;
 
 class ReservationController extends Controller
@@ -35,16 +35,24 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $validatedData = $request->validate([
+            'nom' => 'required',
+            'phone' => 'required',
+            'nombre' => 'required',
+            'service_id' => 'required',
+            'descrption' => 'required',
+            'state' => 'required',
+        ]);
 
+        return Reserve::create( $validatedData);
+        }
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Photography  $photography
+     * @param  \App\Models\Reserve  $reserve
      * @return \Illuminate\Http\Response
      */
-    public function show(Photography $photography)
+    public function show(Reserve $reserve)
     {
         //
     }
@@ -52,10 +60,10 @@ class ReservationController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Photography  $photography
+     * @param  \App\Models\Reserve  $reserve
      * @return \Illuminate\Http\Response
      */
-    public function edit(Photography $photography)
+    public function edit(Reserve $reserve)
     {
         //
     }
@@ -64,10 +72,10 @@ class ReservationController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Photography  $photography
+     * @param  \App\Models\Reserve  $reserve
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Photography $photography)
+    public function update(Request $request, Reserve $reserve)
     {
         //
     }
@@ -75,10 +83,10 @@ class ReservationController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Photography  $photography
+     * @param  \App\Models\Reserve  $reserve
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Photography $photography)
+    public function destroy(Reserve $reserve)
     {
         //
     }

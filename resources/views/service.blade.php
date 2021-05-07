@@ -17,7 +17,7 @@
 				<a href="{{url('reservation-location/decoration')}}" class="btn bt__2">Faire une reservation</a>
             </div>
             
-            {{-- <div class="clear"></div> --}}
+            {{-- location chaise et table --}}
             <div class="grid_4">
                 <h3 class="head1">Location</h3>
             </div>
@@ -26,7 +26,7 @@
                 <p>Dras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis accumsanInteger convallis orci vel mi laoreet, at ornare lorem consequatasellus erat nisl auctor vel velit sed,pharetra venenatis nulla. </p>
                 Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Donec non sapien a erat porttitor aliqueter.
                 <br>
-				<a href="#" class="btn bt__2">Faire une reservation</a>
+				<a href="{{url('reservation-location/chaise')}}" class="btn bt__2">Faire une reservation</a>
             </div>
             
             <div class="clear"></div>

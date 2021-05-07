@@ -35,3 +35,14 @@ Route::get('/contact', function () {
 });
 
 Route::get('/reservation-location/{type}', [ReservationController::class, 'form_reservation']);
+
+Route::get('/reservation-location/chaise', function () {
+    return view('contact');
+});
+
+Route::get('/reservation-location/photographie', function () {
+    return view('contact');
+});
+
+Route::get('register', [ReservationController::class, 'form_register'])->name('register');
+Route::post('register', [ReservationController::class, 'register'])->name('register.post');

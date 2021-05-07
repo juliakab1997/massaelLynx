@@ -11,8 +11,8 @@
                 Massael service <br>
                 9870 St Vincent Place,<br>
                 Glasgow, DC 45 Fr 45.<br>
-                Telephone: +1 800 603 6035<br>
-                E-mail: <a href="#">mail@demolink.org</a>
+                Telephone: +243 974 118 826<br>
+                E-mail: <a href="#">juliamkb1997@gmail.com</a>
             </div>
             <div class="grid_6 preffix_1">
                 <h3>Dite nous en plus</h3>
@@ -29,6 +29,21 @@
                     </label>
                     <label class="email">
                         <input type="text" placeholder="Votre E-mail:" data-constraints="@Required @Email" />
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">Adresse mail invalide</span>
+                    </label>
+                    <label class="numero">
+                        <input type="text" placeholder="Votre telephone:" data-constraints="@Required @Email" />
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*This is not a valid phpne.</span>
+                    </label>
+                    {{-- <label class="nombre">
+                        <input type="text" placeholder="quatity:" data-constraints="@Required @Email" />
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*This is not a valid email.</span>
+                    </label> --}}
+                    <label class="etat">
+                        <input type="text" placeholder="etat" data-constraints="@Required @Email" />
                         <span class="empty-message">*This field is required.</span>
                         <span class="error-message">*This is not a valid email.</span>
                     </label>
